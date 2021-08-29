@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<title>Form Validations</title>
+<script src='js/JRock.js'></script>
+<script>
+//JRock user script starts here
+function doSomething()
+{
+return $$$("someForm").isValid(
+{
+"nm":{
+"required":true,
+"max-length":20,
+"error-pane":"nmErrorSection",
+"errors":{
+"required":"Name required",
+"max-length":"Name cannot exceed 20 characters"
+}
+},
+"ad":{
+"required":true,
+"error-pane":"adErrorSection",
+"errors":{
+"required":"Address required"
+}
+},
+"ct":{
+"invalid":-1,
+"error-pane":"ctErrorSection",
+"errors":{
+"invalid":"Select City"
+}
+},
+"gender":{
+"required":true,
+"error-pane":"genderErrorSection",
+"errors":{
+"required":"Select gender"
+}
+},
+"agree":{
+"required-state":true,
+"display-alert":true,
+"errors":{
+"required-state":"Select I agree checkbox"
+}
+}
+}
+);
+}
+// JRock user script ends here
+</script>
+</head>
+<body>
+<h1>Form Validations</h1>
+<form id='someForm' onsubmit='return doSomething()'>
+<b>Name</b><br>
+<input type='text' name='nm' id='nm'><br><span id='nmErrorSection'></span><br><br>
+<b>Address</b><br>
+<textarea name='ad' id='ad'></textarea><br>
+<span id='adErrorSection'></span><br><br>
+<b>Select City</b><br> <select id='ct' name='ct'>
+<option value='-1'>Select City</option>
+<option value='1'>Ujjain</option>
+<option value='2'>Dewas</option>
+<option value='3'>Indore</option>
+</select><br>
+<span id='ctErrorSection'></span><br><br>
+<b>Gender</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Male <input type='radio' name='gender' id='ml' value='M'>
+&nbsp;&nbsp;&nbsp;&nbsp;
+Female <input type='radio' name='gender' id='fe' value='F'><br>
+<span id='genderErrorSection'></span><br><br>
+<input type='checkbox' name='agree' id='ag' value='Y'>I agree<br><br>
+<button type='submit'>Register</button>
+</form>
+</body>
+</html>

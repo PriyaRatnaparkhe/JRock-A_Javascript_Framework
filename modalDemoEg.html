@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<title>JRock Modal Demo</title>
+<script src='js/JRock.js'></script>
+<link rel='stylesheet' href='css/JRock.css'>
+<script>
+// JRock user script starts here
+function abBeforeOpening()
+{
+alert("Modal with ab is about to be opened");
+return true;
+}
+function abBeforeClosing()
+{
+alert("Modal with ab is about to be closed");
+return true;
+}
+function abOpened()
+{
+alert("Modal with ab opened");
+}
+function abClosed()
+{
+alert("Modal with ab closed");
+}
+function createModal1()
+{
+$$$.modals.show("ab");
+}
+// JRock user script ends here
+</script>
+</head>
+<body>
+<h2>Modal </h2>
+<button style='text-align:center;background-color:#4CAF50;color:white;padding:14px 40px;border:0.5px blue;display:inline-block;text-align:center;text-decoration:none;font-size:12pt;cursor:pointer;' onclick='createModal1()'>Show modal</button>
+<div id='ab' closeOnMaskClick="TRUE" style="display:none" forModal='True' size="500x200" header="Some Heading" footer="Some Footer" maskColor="#00CED1" modalBackgroundColor="#20B2AA" closeButton="true" beforeOpening="abBeforeOpening()" afterOpening="abOpened()" beforeClosing="abBeforeClosing()" afterClosing="abClosed()">
+God is great<br>
+God is great<br>
+<input type="text" id="myTextBox" value="Great"><br>
+God is great<br>
+God is great<br>
+God is great<br>
+God is great<br> 
+God is great<br>
+God is great<br>
+God is great<br>
+God is great<br>
+God is great<br>
+Last Line<br>
+</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<title>JRock Demo </title>
+<script src='js/JRock.js'></script>
+<script>
+// JRock user script starts here
+function getDesignation()
+{
+let titleSpan=$$$("title");
+titleSpan.html("");
+let code=$$$("code").value();
+$$$.ajax({
+"url":"servletTwo",
+"data":{
+"code":code
+},
+"methodType":"GET",
+"success":function(responseData){
+if(responseData=="INVALID")
+{
+alert("Invalid designation code");
+}
+else
+{
+var splits=responseData.split(",");
+titleSpan.html(splits[1]);
+}
+},
+"failure":function(){
+alert("Some problem");
+}
+});
+}
+//JRock user script ends here
+</script>
+</head>
+<body>
+<h2>Get type request with data example</h2>
+Enter code <input type='text' id='code'>
+<button type='button' onclick='getDesignation()'>Get Designation</button><br>
+<br>
+Title <span id='title'></span>
+<br>
+<!--<a href='index.html'>Home</a>-->
+</body>
+</html>
