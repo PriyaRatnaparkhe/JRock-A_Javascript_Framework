@@ -6,13 +6,14 @@ JRock is a javaScript framework which would allow the user to create some compon
 4. Ajax  GET and POST requests can be handeled in an effective way.
 # Steps to use JRock:
 1. Download the zip file and unzip it.
-2. After successfull unzip place the folders named as **js,css and images** in your root folder .
-4. For using the features of this framework include the **js** and **css** file using the following commands<br>
+2. After successfull unzip look for the folders named as **js,css and images** and place them in your root folder .
+3.After placing make sure they are in parallel.
+4. For using the features of this framework include the **js** and **css** files using the following commands<br>
 ```
 <script src='js/JRock.js'></script>
 <link rel="stylesheet" href="css/JRock.css">
 ```
-###### The **FillComboBox** and **Ajax calls(GET/POST)** are designed in such that they fetch the data from server side or through servlets. In examples described under **FillComboBox, Get / POST (Ajax Calls)** , the data is fetched from respective servlets. So for using these features defining servlets is mandatory.<br>
+#### The **FillComboBox** and **Ajax calls(GET/POST)**  are designed in such a way that they fetch the data from server side or through servlets. In examples described under **FillComboBox, Get / POST (Ajax Calls)** , the data is fetched from respective servlets. So for using these features defining servlets is mandatory.<br><br>
 # Demo Examples 
 
 ## Get Type Request
