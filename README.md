@@ -65,8 +65,8 @@ Title <span id='title'></span>
 </html>
 ```
 ## Output 
-### If the Designation Code is valid:<img width="335" alt="GetTypeRequestExample1" src="https://user-images.githubusercontent.com/82965104/131242561-31d08cc7-99ee-47f8-9c28-4e9217429fa7.png">
-### If the Designation code is invalid:
+### If the Designation Code is valid:<br><img width="335" alt="GetTypeRequestExample1" src="https://user-images.githubusercontent.com/82965104/131242561-31d08cc7-99ee-47f8-9c28-4e9217429fa7.png">
+### If the Designation code is invalid:<br>
 ![GetTypeRequestExample2 (2)](https://user-images.githubusercontent.com/82965104/131242579-5b9e7275-2c41-4e1e-9d82-a1723a895c61.png)
 
 ## Post Type Request
@@ -256,12 +256,11 @@ Female <input type='radio' name='gender' id='fe' value='F'><br>
 </html>
 ```
 ### Output
-1. ![FormValidationsExamples (2)](https://user-images.githubusercontent.com/82965104/131242691-d6d20a78-86d3-4ee2-b566-7d2e79480d29.png)
-![FormValidationExample2 (2)](https://user-images.githubusercontent.com/82965104/131242695-20ad635e-04d7-4ed5-80b1-c60b78d625a1.png)
+![FormValidationExample2 (2)](https://user-images.githubusercontent.com/82965104/131243070-fe108841-7fac-44c2-a15c-f7bf6e56a1fc.png)
+![FormValidationsExamples (3)](https://user-images.githubusercontent.com/82965104/131243072-49536b8a-0170-43c8-ab5c-dd8c921b3ff2.png)
 
 ## Accordian Demo
 ```
-<!doctype html>
 <html lang='en'>
 <head>
 <meta charset='utf-8'>
