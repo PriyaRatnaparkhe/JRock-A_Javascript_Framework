@@ -12,8 +12,8 @@ JRock is a javaScript framework which would allow the user to create some compon
 <script src='js/JRock.js'></script>
 <link rel="stylesheet" href="css/JRock.css">
 ```
-
-# Demo Examples with respective codes and Output screenshots showing the correct way of usage .
+###### The **FillComboBox** and **Ajax calls(GET/POST)** are designed in such that they fetch the data from server side or through servlets. In examples described under **FillComboBox, Get / POST (Ajax Calls)** , the data is fetched from respective servlets. So for using these features defining servlets is mandatory.<br>
+# Demo Examples 
 
 ## Get Type Request
 ```
