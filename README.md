@@ -1,18 +1,20 @@
 JRock is a javaScript framework which would allow the user to create some components, included but not limited to modals , accordians etc. Using JRock complex activities such as form validations can be performed without much trouble.Trouble here emphasises on the user's need to write the long and cumbursome javascript code.<br>
-## Features:
+# Features:
 1. Modal and Accordians can be created without any trouble.
 2. A combo box can be populated by defining least possible code.
 3. Form validations can be performed by mear declaration of properties using json .
 4. Ajax  GET and POST requests can be handeled in an effective way.
-## Steps to use JRock:
+# Steps to use JRock:
 1. Download the zip file and unzip it.
-2. After successfull unzip place the folders named as **js,css and images**
-3. Place these three folders in your root folder .
-4. For using the features of this framework include the **js** and **css** file using the following command<br>
+2. After successfull unzip place the folders named as **js,css and images** in your root folder .
+4. For using the features of this framework include the **js** and **css** file using the following commands<br>
 ```
 <script src='js/JRock.js'></script>
 <link rel="stylesheet" href="css/JRock.css">
 ```
+
+# Demo Examples with respective codes and Output screenshots showing the correct way of usage .
+
 ## Get Type Request
 ```
 <!doctype html>
@@ -163,7 +165,7 @@ window.addEventListener('load',populateDesignations);
 </script>
 </head>
 <body>
-<h2>Get type request example</h2>
+<h2>Fill Combo Box Example</h2>
 <select id='designationCode'>
 </select><br>
 <!--<a href='index.html'>Home</a>-->
@@ -171,7 +173,7 @@ window.addEventListener('load',populateDesignations);
 </html>
 ```
 ### Output
-![FillComboBoxExample (2)](https://user-images.githubusercontent.com/82965104/131242731-6481295b-f767-40eb-93f3-6e9e8be6fa0b.png)
+![FillComboBoxExample (2)](https://user-images.githubusercontent.com/82965104/131243295-c2d821b4-239d-4dda-b8be-494f86f6bc60.png)
 
 ## Form Validation Example
 ```
@@ -256,7 +258,6 @@ Female <input type='radio' name='gender' id='fe' value='F'><br>
 </html>
 ```
 ### Output
-![FormValidationExample2 (2)](https://user-images.githubusercontent.com/82965104/131243070-fe108841-7fac-44c2-a15c-f7bf6e56a1fc.png)
 ![FormValidationsExamples (3)](https://user-images.githubusercontent.com/82965104/131243072-49536b8a-0170-43c8-ab5c-dd8c921b3ff2.png)
 
 ## Accordian Demo
