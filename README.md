@@ -7,7 +7,7 @@ JRock is a javaScript framework which would allow the user to create some compon
 # Steps to use JRock:
 1. Download the zip file and unzip it.
 2. After successfull unzip look for the folders named as **js,css and images** and place them in your root folder .
-3.After placing make sure they are in parallel.
+3. After placing make sure they are in parallel.
 4. For using the features of this framework include the **js** and **css** files using the following commands<br>
 ```
 <script src='js/JRock.js'></script>
